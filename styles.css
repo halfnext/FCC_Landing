@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(104, 47, 33);
+}
+header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 75px;
+    padding: 0px 20px;
+}
+a {
+    color: rgb(239, 255, 20);
+    text-decoration: none;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 270px;
+}
+@media (max-width: 650px) {
+    main {
+        justify-content: center;
+        align-items: center;
+    }
+}
