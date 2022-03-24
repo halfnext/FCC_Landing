@@ -12,6 +12,7 @@ body {
     background-image: url('Background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 #header {
     position: fixed;
@@ -35,6 +36,14 @@ main {
     justify-content: center;
     align-items: flex-end;
 }
+.nav-link {
+    color: brown;
+    border: solid;
+    text-decoration: none;
+    width: 5vh;
+    padding: 10px;
+    text-align: center;
+}
 #mid {
     margin: 10px 0px 10px 0px;
     order: -1;
@@ -42,6 +51,21 @@ main {
 #bot {
     margin-top: 15vh;
     display: flex;
+    color: rgb(240, 26, 26);
+    text-align: center;
+}
+@media (max-width: 1067px) {
+    #bot {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 650px) {
+    main {
+        height: calc(100vh - 280px);
+        padding-top: 280px;
+    }
 }
 
 
