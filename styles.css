@@ -58,16 +58,29 @@ main {
     #bot {
         flex-wrap: wrap;
         justify-content: center;
+        width: 100%; 
     }
 }
-
 @media (max-width: 650px) {
     main {
+        display: flex;
         height: calc(100vh - 280px);
         padding-top: 280px;
     }
 }
-
+@media (max-width: 450px) {
+    #mid {
+        width: 100%;
+    }
+    #video {
+        width: 100%;
+    }
+    #header-img {
+        display: flex;
+        width: 100%;
+        height: auto;
+    }
+}
 
 
 
